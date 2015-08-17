@@ -5,7 +5,7 @@ gulp.task('less', function () {
     gulp.src('less/main.less')
         .pipe(sourcemap.init())
         .pipe(less())
-        .pipe(sourcemap.write('.map'))
+        .pipe(sourcemap.write('map'))
         .pipe(gulp.dest('css/'));
 });
 gulp.task('css',['less'], function () {

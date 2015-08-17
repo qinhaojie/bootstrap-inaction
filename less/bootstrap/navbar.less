@@ -415,6 +415,14 @@
     > li > a {
       color: @navbar-default-link-color;
 
+      >.glyphicon {
+        color: @gray-light;
+
+
+      }
+
+      &:hover .glyphicon,
+      &:focus .glyphicon,
       &:hover,
       &:focus {
         color: @navbar-default-link-hover-color;
@@ -423,6 +431,8 @@
     }
     > .active > a {
       &,
+      &:hover .glyphicon,
+      &:focus .glyphicon,
       &:hover,
       &:focus {
         color: @navbar-default-link-active-color;
